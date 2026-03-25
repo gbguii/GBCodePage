@@ -4,56 +4,155 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Política de Privacidade - [Nome do Seu App]</title>
+    <title>Política de Privacidade - LemeIA CRM</title>
+    <link rel="stylesheet" href="./src/css/geral.css">
+    <link rel="icon" type="image/png" href="./src/img/favicon.ico">
     <style>
-        body {
-            font-family: sans-serif;
-            line-height: 1.6;
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 20px;
-            color: #333;
+        .privacy-content {
+            background: var(--cor-bg-secundario);
+            border: 1px solid var(--glass-border);
+            border-radius: 16px;
+            padding: 50px 40px;
+            margin: 60px auto 100px;
+            max-width: 900px;
+            box-shadow: var(--glass-shadow);
+        }
+        
+        .privacy-content h1 {
+            color: var(--cor-primaria-verde);
+            font-family: var(--fonte-titulos);
+            margin-bottom: 20px;
+            font-size: 2.5em;
         }
 
-        h1 {
-            color: #25D366;
+        .privacy-content h2 {
+            color: var(--cor-primaria-azul);
+            font-family: var(--fonte-titulos);
+            border-bottom: 1px solid var(--glass-border);
+            padding-bottom: 10px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            font-size: 1.8em;
         }
 
-        h2 {
-            border-bottom: 1px solid #ccc;
-            padding-bottom: 5px;
+        .privacy-content p {
+            color: var(--color-text-light);
+            line-height: 1.8;
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+
+        .privacy-content ul {
+            margin-bottom: 20px;
+            padding-left: 20px;
+        }
+
+        .privacy-content li {
+            color: var(--cor-texto);
+            margin-bottom: 10px;
+            list-style-type: square;
+        }
+
+        .privacy-content li::marker {
+            color: var(--cor-primaria-verde);
+        }
+
+        .privacy-content strong {
+            color: var(--cor-texto);
+            font-weight: 700;
+        }
+        
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            margin-bottom: 30px;
+            color: var(--cor-primaria-azul);
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+        
+        .back-link:hover {
+            color: var(--cor-primaria-verde);
+            text-shadow: var(--glow-green);
+            transform: translateX(-5px);
+        }
+        
+        .back-link svg {
+            margin-right: 8px;
         }
     </style>
 </head>
 
 <body>
-    <h1>Política de Privacidade</h1>
-    <p>Última atualização: 17 de Fevereiro de 2026</p>
+    <nav id="nav-menu">
+        <div id="logo">
+            <a href="index.html">
+                <img src="./src/img/logo-gbcode1.png" alt="Logo GB Code">
+            </a>
+        </div>
+        <div class="nav-links">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="index.html#funcionalidades">Funcionalidades</a></li>
+                <li><button id="talk-us"><a
+                            href="https://wa.me/554195593032?text=Ol%C3%A1,%20gostaria%20de%20saber%20mais%20sobre%20o%20LemeIA%20CRM."
+                            target="_blank">Fale Conosco</a></button></li>
+            </ul>
+        </div>
+    </nav>
 
-    <p>Esta política descreve como o <strong>GB Code</strong> coleta e utiliza dados através da
-        integração com a API do WhatsApp.</p>
+    <div class="container">
+        <div class="privacy-content">
+            <a href="index.html" class="back-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-left">
+                    <path d="m12 19-7-7 7-7"/>
+                    <path d="M19 12H5"/>
+                </svg>
+                Voltar para o Início
+            </a>
+            
+            <h1>Política de Privacidade</h1>
+            <p><strong>Última atualização:</strong> 17 de Fevereiro de 2026</p>
 
-    <h2>1. Dados Coletados</h2>
-    <p>Coletamos apenas as informações necessárias enviadas via WhatsApp, como:</p>
-    <ul>
-        <li>Número de telefone;</li>
-        <li>Nome de exibição do perfil;</li>
-        <li>Conteúdo das mensagens enviadas pelo usuário.</li>
-    </ul>
+            <p>Esta política descreve como o <strong>GB Code</strong> coleta e utiliza dados através da
+                integração com a API do WhatsApp do LemeIA CRM.</p>
 
-    <h2>2. Finalidade do Uso</h2>
-    <p>Os dados são utilizados exclusivamente para automação de atendimento. Não vendemos esses dados a terceiros.</p>
+            <h2>1. Dados Coletados</h2>
+            <p>Coletamos apenas as informações necessárias enviadas via WhatsApp, como:</p>
+            <ul>
+                <li>Número de telefone;</li>
+                <li>Nome de exibição do perfil;</li>
+                <li>Conteúdo das mensagens enviadas pelo usuário em contexto de atendimento.</li>
+            </ul>
 
-    <h2>3. Compartilhamento com a Meta</h2>
-    <p>As mensagens trafegam pela infraestrutura da Meta (WhatsApp Cloud API) e estão sujeitas aos termos de serviço da
-        própria plataforma.</p>
+            <h2>2. Finalidade do Uso</h2>
+            <p>Os dados são utilizados exclusivamente para automação de atendimento, direcionamento e histórico comercial. Não vendemos esses dados a terceiros sob nenhuma hipótese.</p>
 
-    <h2>4. Seus Direitos</h2>
-    <p>O usuário pode, a qualquer momento, solicitar a exclusão de seus dados de nossa base entrando em contato pelo
-        e-mail: <strong>barbieri_lgb@hotmail.com</strong>.</p>
+            <h2>3. Compartilhamento com a Meta</h2>
+            <p>As mensagens trafegam pela infraestrutura da Meta (WhatsApp Cloud API) e estão sujeitas aos termos de serviço da
+                própria plataforma.</p>
 
-    <h2>5. Segurança</h2>
-    <p>Empregamos medidas técnicas para proteger as informações processadas em nossos servidores.</p>
+            <h2>4. Seus Direitos</h2>
+            <p>O usuário pode, a qualquer momento, solicitar a exclusão de seus dados de nossa base entrando em contato pelo
+                e-mail: <strong>contato@gbcode.com.br</strong>.</p>
+
+            <h2>5. Segurança</h2>
+            <p>Empregamos medidas técnicas e organizacionais rígidas para proteger as informações processadas em nossos servidores.</p>
+        </div>
+    </div>
+
+    <footer class="main-footer" style="padding-top: 40px;">
+        <div class="footer-base" style="margin-top: 0;">
+            <div class="container">
+                <p>&copy; <span id="current-year"></span> GB Code. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
 </body>
 
 </html>
