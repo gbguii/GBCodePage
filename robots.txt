@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://gbcode.com.br/sitemap.xml
