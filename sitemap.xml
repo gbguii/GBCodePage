@@ -8,7 +8,13 @@
   </url>
   <url>
     <loc>https://gbcode.com.br/politica-de-privacidade.html</loc>
-    <lastmod>2026-04-27</lastmod>
+    <lastmod>2026-06-21</lastmod>
+    <priority>0.5</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://gbcode.com.br/termos-de-servico.html</loc>
+    <lastmod>2026-06-21</lastmod>
     <priority>0.5</priority>
     <changefreq>monthly</changefreq>
   </url>
